@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kontact</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-house-fill me-2"></i>
+                        King-Cleaning
+                    </p>
+
+                    <p class="d-flex d-lg-block d-md-block d-none me-4 mb-0">
+                        <i class="bi-clock-fill me-2"></i>
+                        <strong class="me-2">Mon - Fri</strong> 8:00 AM - 5:30 PM
+                    </p>
+
+                    <p class="site-header-icon-wrap text-white d-flex mb-0 ms-auto">
+                        <i class="site-header-icon bi-whatsapp me-2"></i>
+
+                        <a href="tel: 0176 82386841" class="text-white">
+                            0176 82386841
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images//avatar/logo.png" class="logo img-fluid" alt="">
+
+                <span class="ms-2">King-Cleaning</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Heim</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Über uns</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Dienstleistungen</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="index.html#services-section">Alle Dienstleistungen</a>
+                            </li>
+
+                            <li><a class="dropdown-item" href="services-detail.html">Hausreinigung</a></li>
+
+                            <li><a class="dropdown-item" href="service-detail-geschaft.html">Geschäftsreinigung</a></li>
+                            <li><a class="dropdown-item" href="service-detail-garten.html">Hof und Garten</a></li>
+                            <li><a class="dropdown-item" href="service-detail-mobel.html">Möbelreinigung</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Kontakt</a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="#">Bestellung</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="banner-section d-flex justify-content-center align-items-end">
+            <div class="section-overlay"></div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-7 col-12">
+                        <h1 class="text-white mb-lg-0">Kontakt</h1>
+                    </div>
+
+                    <div class="col-lg-4 col-12 d-flex justify-content-lg-end align-items-center ms-auto">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="index.html">Heim</a></li>
+
+                                <li class="breadcrumb-item active" aria-current="page">Kontakt</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <sectin class="contact-section section-padding">
+            <div class="container">
+                <div class="row">
+
+
+
+                    <div class="col-lg-12 col-12">
+                        <form id="contact-form" class="custom-form consulting-form bg-white shadow-lg mb-5 mb-lg-0" method="post">
+                            <div class="consulting-form-header d-flex align-items-center">
+                                <h3 class="mb-4">Formular zur Auswahl der Reinigungsdienste</h3>
+                            </div>
+
+                            <div class="consulting-form-body">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <input type="text" name="volunteer_name" class="form-control"
+                                            placeholder="Hans Maller" required>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <input type="text" name="volunteer_adresse" class="form-control"
+                                            placeholder="Straße Wolfgang 5 Hamburg" required>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <input type="text" name="volunteer_plz" class="form-control"
+                                            placeholder="Postleitzahl" required>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <input type="email" name="volunteer_email" class="form-control"
+                                            placeholder="yours@gmail.com" required>
+                                    </div>
+                                </div>
+
+                                <select class="form-select form-control" name="job_salary" required>
+                                    <option value="" disabled selected>Art der Dienstleistung</option>
+                                    <option value="Hausreinigung">Hausreinigung</option>
+                                    <option value="Geschäftsreinigung">Geschäftsreinigung</option>
+                                    <option value="Hof und Garten">Hof und Garten</option>
+                                    <option value="Möbelreinigung">Möbelreinigung</option>
+                                </select>
+
+                                <label for="services">Wählen Sie die gewünschten Dienstleistungen aus:</label>
+                                <select class="form-select form-control" id="services" name="services[]" multiple size="4">
+                                    <option value="Möbelreinigung">Möbelreinigung</option>
+                                    <option value="Fensterreinigung">Fensterreinigung</option>
+                                    <option value="Teppichreinigung">Teppichreinigung</option>
+                                    <option value="Badreinigung">Badreinigung</option>
+                                    <option value="Küchenreinigung">Küchenreinigung</option>
+                                    <option value="Bodenreinigung">Bodenreinigung</option>
+                                    <option value="Grundreinigung">Grundreinigung</option>
+                                    <option value="Vorhangreinigung">Vorhang- und Gardinenreinigung</option>
+                                </select>
+
+                                <textarea name="volunteer_message" rows="3" class="form-control"
+                                    placeholder="Hinterlassen Sie eine zusätzliche Nachricht"></textarea>
+
+                                <div class="col-lg-6 col-md-10 col-8 mx-auto">
+                                    <button type="submit" class="form-control">Anfrage senden</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+            </section>
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="site-footer-bottom">
+
+            <p class="copyright-text mb-0 text-center">Copyright © 2024 King-Cleaning</p>
+
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/formular.js" defer></script>
+
+
+  
+</body>
+
+</html>
