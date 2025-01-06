@@ -87,11 +87,13 @@
                             <li><a class="dropdown-item" href="index.html#services-section">Alle Dienstleistungen</a>
                             </li>
 
-                            <li><a class="dropdown-item" href="services-detail.html">Hausreinigung</a></li>
-
+                            <li><a class="dropdown-item" href="services-detail.html">Grundreinigung</a></li>
+                            <li><a class="dropdown-item" href="services-detail-intretinere.html">Unterhaltsreinigung </a></li>
                             <li><a class="dropdown-item" href="service-detail-geschaft.html">Geschäftsreinigung</a></li>
                             <li><a class="dropdown-item" href="service-detail-garten.html">Hof und Garten</a></li>
                             <li><a class="dropdown-item" href="service-detail-mobel.html">Möbelreinigung</a></li>
+                            <li><a class="dropdown-item" href="services-detail-covor.html">Teppichreinigung</a></li>
+                            <li><a class="dropdown-item" href="services-detail-fenster.html">Fensterreinigung</a></li>
                         </ul>
                     </li>
 
@@ -190,17 +192,9 @@
 
 
         <div class="site-footer-bottom">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-6 col-12 ">
-                        <p class="copyright-text mb-0">Copyright © 2036 King-Cleaning</p>
-                    </div>
-
-
-                </div>
-            </div>
+            <p class="copyright-text mb-0" id="data">King-Cleaning</p>
         </div>
+
     </footer>
 
     <!-- JAVASCRIPT FILES -->
@@ -213,6 +207,29 @@
     <script src="js/modernizr.js"></script>
     <script src="js/animated-headline.js"></script>
     <script src="js/custom.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H7JT1V26H0"></script>
+
+    <script>
+        function data() {
+            var div;
+            var date = new Date();
+            var an, luna, zi;
+            var text;
+    
+            an = date.getFullYear();
+            luna = date.getMonth() + 1; 
+            zi = date.getDate();
+            text = zi + "." + luna + "." + an;
+    
+            div = document.getElementById("data");
+            if (div) {
+                div.innerHTML = "  ®Copyright"+ " " + "King-Cleaning" +" " + text;
+            }
+        }
+    
+        data(); // Apel direct în loc de window.onload
+    </script>
 
 </body>
 

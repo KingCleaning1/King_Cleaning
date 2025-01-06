@@ -158,7 +158,9 @@ strong {
 .section-overlay + .container {
   position: relative;
 }
-
+ .center{
+  text-align: center;
+ }
 
 /*---------------------------------------
   ANIMATED HEADLINE               
@@ -231,6 +233,11 @@ strong {
   -webkit-animation: cd-rotate-1-out 1.2s;
   -moz-animation: cd-rotate-1-out 1.2s;
   animation: cd-rotate-1-out 1.2s;
+}
+
+.model {
+  width: 200px;
+  height: 200px;
 }
 
 @-webkit-keyframes cd-rotate-1-in {
@@ -430,6 +437,9 @@ strong {
 .button {
   display: inline-block;
   position: relative;
+  margin-bottom: 15px;
+
+
 }
 
 .button::before,
@@ -441,6 +451,7 @@ strong {
   height: 100%;
 }
 
+
 .button--atlas > span {
   display: inline-block;
 }
@@ -448,7 +459,6 @@ strong {
 .button--atlas:hover > span {
   opacity: 0;
 }
-
 .marquee {
   position: absolute;
   top: 0;
@@ -482,6 +492,7 @@ strong {
   white-space: nowrap;
   font-style: italic;
   padding: 15px;
+ 
 }
 
 @keyframes marquee {
@@ -510,6 +521,7 @@ strong {
 .button--pan:hover::before {
   background: transparent;
   transform: translate3d(0,-100%,0);
+ 
 }
 
 
@@ -612,7 +624,7 @@ strong {
 .navbar {
   background: transparent;
   position: absolute;
-  top: 49px;
+  top: auto;
   right: 0;
   left: 0;
   z-index: 9;
@@ -869,7 +881,7 @@ strong {
 /*---------------------------------------
   BANNER        
 -----------------------------------------*/
-.banner-section, .garten, .geschaft, .mobel{
+.banner-section, .garten, .geschaft, .mobel, .covor, .fenster{
  
   background-repeat: no-repeat;
   background-position: center;
@@ -887,7 +899,14 @@ strong {
   background-image: url('../images/services/garten.jpg');
 
 }
+.fenster {
+  background-image: url('../images/services/geam2.jpeg');
 
+}
+.covor{
+  background-image: url('../images/services/mocheta.jpg');
+
+}
 .geschaft {
   background-image: url('../images/services/geschaft.jpg');
 
@@ -1341,6 +1360,9 @@ strong {
   color: var(--white-color);
 }
 
+.vscomp-ele {
+  max-width: unset;
+}
 
 /*---------------------------------------
   SITE FOOTER              
@@ -1354,9 +1376,14 @@ strong {
   border-top: 1px solid #7fbcf0;
   position: relative;
   z-index: 2;
-  margin-top: 50px;
+  margin-top: -50px;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+#data {
+  color: rgb(255, 255, 255); /* Asigură-te că textul este vizibil */
+  font-size: 16px;
 }
 
 .site-footer .logo {
@@ -1377,6 +1404,7 @@ strong {
   color: var(--section-bg-color);
   font-size: var(--copyright-font-size);
   margin-right: 30px;
+  text-align: center;
 }
 
 .site-footer .custom-btn {
@@ -1567,17 +1595,21 @@ strong {
     left: 20px;
     opacity: 1;
     pointer-events: auto;
-    max-width: 100px;
+    max-width: 200px;
+
     margin-top: 10px;
     margin-bottom: 15px;
   }
 
   .custom-block-wrap .custom-block {
-    right: 12px;
+    right: 5px;
   }
+.custom-block{
+  padding: 15px;
+}
 
   .site-footer {
-    padding-top: 50px;
+    padding-top: 0px;
   }
 
   .copyright-text-wrap {
@@ -1620,7 +1652,7 @@ strong {
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   h2 {
@@ -1628,7 +1660,7 @@ strong {
   }
 
   h3 {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   h4 {
@@ -1636,7 +1668,7 @@ strong {
   }
 
   h5 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 

@@ -591,7 +591,13 @@ progress {
         font-size: 2.5rem
     }
 }
+iframe {
+    width: 100%;
+}
+.contact-info {
+    width: 100%;
 
+}
 .list-unstyled {
     padding-left: 0;
     list-style: none
@@ -675,7 +681,8 @@ progress {
     padding-right: var(--bs-gutter-x, .75rem);
     padding-left: var(--bs-gutter-x, .75rem);
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+   
 }
 
 @media (min-width:576px) {
@@ -8212,7 +8219,7 @@ fieldset:disabled .btn {
 }
 
 .mt-4 {
-    margin-top: -25px!important
+    margin-top: 25px!important
 }
 
 .mt-5 {
@@ -8252,7 +8259,8 @@ fieldset:disabled .btn {
 }
 
 .mb-0 {
-    margin-bottom: 0 !important
+    margin-bottom: 0 !important;
+    text-align:center
 }
 
 .mb-1 {
